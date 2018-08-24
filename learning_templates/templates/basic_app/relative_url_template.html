@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+{% extends 'basic_app/base.html' %}
+     {%block body%}
+            <h1>WELCOME TO RELATIVE URL FILE</h1>
+            <a href="{% url 'basic_app:index' %}"> click here to return to index page</a>
+            <h1>in the href, dont leave space between :</h1>
+            <a href="{%url 'admin:index'%}"> click here to visit admin page</a>
+     {%endblock%}

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+{% extends 'basic_app/base.html' %}
+{%load%}
+     {%block body%}
+
+          <h1>WELCOME TO INDEX</h1>
+          <a href="{% url 'basic_app:other'%}">click here to see the other app</a>
+          <h1>if you want to load custom templates, use load my_templates.py, so this file will hold extra template tags</h1>
+          <p> so basically, filters are like python functions that we memorized!, they help us do things/perfom extra function on
+          the context that the view sent</p>
+          <h1>{{text|cut:'hello'}}</h1>
+          <h1>{{number |add:'99' }}</h1>
+     {%endblock%}

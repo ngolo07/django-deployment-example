@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+{% extends 'basic_app/base.html' %}
+       {%block body%}
+        <H1>WELCOME TO OTHER APP</H1>
+        <a href="{% url 'basic_app:index' %}"> click here to return to the index page</a>
+       {% endblock %}
